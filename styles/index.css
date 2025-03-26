@@ -1,37 +1,37 @@
 /*------ FONTS -------*/
 @font-face {
-    font-family: JBMNerd;
-    src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Regular.woff2);
-    font-style: normal;
-    font-weight: normal;
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Regular.woff2);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: JBMNerd;
-    src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Italic.woff2);
-    font-style: italic;
-    font-weight: normal;
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Italic.woff2);
+  font-style: italic;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: JBMNerd;
-    src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Bold.woff2);
-    font-style: normal;
-    font-weight: bold;
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Bold.woff2);
+  font-style: normal;
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: JBMNerd;
-    src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-BoldItalic.woff2);
-    font-style: italic;
-    font-weight: bold;
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-BoldItalic.woff2);
+  font-style: italic;
+  font-weight: bold;
 }
 
 * {
-    font-family: JBMNerd;
+  font-family: JBMNerd;
 }
 
 body {
-    color: white;
-    background-color: rgb(192, 109, 213);
+  color: white;
+  background-color: rgb(192, 109, 213);
 }
