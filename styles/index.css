@@ -31,7 +31,15 @@
   font-family: JBMNerd;
 }
 
+h1 {
+  font-size: 60px;
+}
+
+a.twitter {
+  color: rgb(0, 217, 255);
+}
+
 body {
   color: white;
-  background-color: rgb(192, 109, 213);
+  background-color: rgba(149, 109, 213, 0.95);
 }
