@@ -31,8 +31,10 @@
   font-family: JBMNerd;
 }
 
-h6 {
-  font-size: 60px;
+body {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(149, 109, 213, 0.95);
 }
 
 a.twitter {
@@ -43,35 +45,57 @@ div.header {
   padding: 200px;
   background-image: url(https://nexd3v.github.io/assets/images/nexd3v-v1.png);
   background-size: cover;
-  border-radius: 9px;
+  border-radius: 10px;
   color: white;
   font-size: 25px;
+  position: relative;
 }
 
-.nexicon,
-.nextitle {
-  float: left;
+.header img {
+  position: absolute;
+  left: 15px;
+  top: 150px;
+}
+.header h1 {
+  position: absolute;
+  left: 175px;
+  top: 150px;
+  outline: 10px;
+  outline-color: black;
 }
 
-.nexicon::after,
-.nextitle::after {
-  /*clearfix*/
-  content: "";
-  display: table;
-  clear: both;
+.box {
+  border: 2px solid rgb(206, 203, 209);
+  border-radius: 10px;
+  /*margin: 15%;*/
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0px;
 }
 
-/* #nexicon {
-  display: flex;
-  margin: 0 6px;
+.button {
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 10px;
+  color: blueviolet;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-#nextitle {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-} */
 
-body {
-  color: white;
-  background-color: rgba(149, 109, 213, 0.95);
+.clickme {
+  background-color: #aa0404;
+  color: rgb(211, 213, 109);
+}
+
+.clickme:hover {
+  background-color: #910303;
+  color: rgb(226, 183, 43);
 }
