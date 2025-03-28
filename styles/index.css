@@ -43,7 +43,7 @@ a.twitter {
 
 div.header {
   padding: 200px;
-  background-image: url(https://nexd3v.github.io/assets/images/nexd3v-v1.png);
+  background-image: url(https://nexd3v.github.io/assets/images/nexd3v-v3.png);
   background-size: cover;
   border-radius: 10px;
   color: white;
@@ -52,6 +52,7 @@ div.header {
 }
 
 .header img {
+  border-radius: 50%;
   position: absolute;
   left: 15px;
   top: 150px;
