@@ -31,6 +31,7 @@
   font-family: JBMNerd;
 }
 
+/*------ BODY & HEADER ------*/
 body {
   box-sizing: border-box;
   color: white;
@@ -65,9 +66,9 @@ div.header {
 .header h1 {
   position: absolute;
   left: 175px;
-  top: 150px;
-  outline: 10px;
-  outline-color: black;
+  top: 175px;
+  text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .box {
@@ -80,6 +81,7 @@ div.header {
   margin-bottom: 0px;
 }
 
+/*------ BUTTONS ------*/
 .button {
   background-color: #04aa6d;
   border: none;
@@ -105,3 +107,5 @@ div.header {
   background-color: #910303;
   color: rgb(226, 183, 43);
 }
+
+/*------ FOOTER ------*/
