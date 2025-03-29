@@ -1,77 +1,89 @@
-/*------ FONTS -------*/
-@font-face {
-  font-family: JBMNerd;
-  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Regular.woff2);
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: JBMNerd;
-  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Italic.woff2);
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: JBMNerd;
-  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Bold.woff2);
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: JBMNerd;
-  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-BoldItalic.woff2);
-  font-style: italic;
-  font-weight: bold;
-}
-
-* {
-  font-family: JBMNerd;
-}
-
-/*------ BODY & HEADER ------*/
-body {
-  box-sizing: border-box;
-  color: white;
-  background-color: rgba(149, 109, 213, 0.95);
-}
-
+/*------ HEADER & BODY ------*/
 a.twitter {
   color: rgb(0, 217, 255);
 }
+a.about {
+  color: white;
+}
 
 div.header {
-  padding: 200px;
+  padding: 25px;
   background-image: url(https://nexd3v.github.io/assets/images/nexd3v-full.png);
-  background-position: center;
+  background-position: 0% 45%;
   background-size: cover;
   border-radius: 10px;
   color: white;
   font-size: 25px;
   position: relative;
   margin-top: 0px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
   margin-bottom: 0px;
 }
+.card1 img.about {
+  background-color: #00000077;
+  border-radius: 10px;
+  width: 165px;
+  height: 265px;
+}
+.card1 img.about:hover {
+  background-color: #00000000;
+}
 
-.header img {
+.header img.nexicon {
   border-radius: 50%;
   position: absolute;
   left: 15px;
-  top: 150px;
+  top: 237px;
 }
 .header h1 {
   position: absolute;
   left: 175px;
-  top: 175px;
+  top: 250px;
   text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000,
     1px 1px 0 #000;
 }
-
-.box {
+/*------ Just a test ------*/
+.box1 {
+  width: 175px;
+  height: 275px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.box1::after {
+  content: "";
+  width: 70px;
+  height: 200%;
+  position: absolute;
+  background-color: rgb(248, 237, 78);
+  animation: animate 3s infinite linear;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card1 {
+  width: 165px;
+  height: 265px;
+  background-image: url(https://nexd3v.github.io/assets/images/nexd3v.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+/*------ Website content Border ------*/
+.box2 {
   border: 2px solid rgb(206, 203, 209);
   border-radius: 10px;
   /*margin: 15%;*/

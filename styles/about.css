@@ -1,0 +1,26 @@
+div.header {
+  padding: 17px;
+  background-image: url(https://nexd3v.github.io/assets/images/nexd3v-full.png);
+  background-position: 0% 45%;
+  background-size: cover;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0px;
+}
+.amtxt {
+  place-self: center;
+}
+.box2 {
+  border: 2px solid rgb(206, 203, 209);
+  border-radius: 10px;
+  /*margin: 15%;*/
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0px;
+}

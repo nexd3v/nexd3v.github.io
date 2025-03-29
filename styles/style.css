@@ -1,0 +1,39 @@
+/*------ FONTS -------*/
+@font-face {
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Regular.woff2);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Italic.woff2);
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-Bold.woff2);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: JBMNerd;
+  src: url(https://nexd3v.github.io/assets/fonts/JetBrainsMonoNerdFont-BoldItalic.woff2);
+  font-style: italic;
+  font-weight: bold;
+}
+
+* {
+  font-family: JBMNerd;
+}
+
+/*------ BODY & HEADER ------*/
+body {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(149, 109, 213, 0.95);
+}
