@@ -37,3 +37,13 @@ body {
   color: white;
   background-color: rgba(149, 109, 213, 0.95);
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(150, 91, 184, 0.568);
+  color: white;
+  text-align: center;
+}
