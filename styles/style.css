@@ -43,7 +43,28 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(150, 91, 184, 0.568);
-  color: white;
-  text-align: center;
+  display: flex;
+  background: rgba(150, 91, 184, 0.568);
+  grid: 50px / 1fr 1fr;
+  text-align: left;
+}
+#social-icons {
+  padding: 0 15px 0 15px;
+  margin: 11px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.image-hover-highlight {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.image-hover-highlight:hover {
+  opacity: 0.75;
+}
+footer p {
+  margin-top: 15px;
+  margin-left: 50px;
 }
