@@ -122,6 +122,11 @@ div.header {
   color: rgb(226, 183, 43);
 }
 
+.jp-flag {
+  width: 56px;
+  height: 40px;
+}
+
 /*------ INTRO ------*/
 
 .intro {
