@@ -1,12 +1,3 @@
-// Welcome Splash Screen
-//const splash = document.querySelector(".splash");
-
-//document.addEventListener("DOMContentLoaded", (e) => {
-//  setTimeout(() => {
-//    splash.classList.add("display-none");
-//  }, 3000);
-//});
-
 // Intro to Website
 let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
@@ -52,19 +43,3 @@ button.addEventListener("click", function () {
   array.push(1, 2, 3);
   console.log(array);
 });
-
-// Unused Button
-//let buttonX = document.getElementById("buttonx");
-//const urlx = "http://x.com/_nexd3v";
-
-//buttonX.addEventListener("click", function () {
-//  window.open(url, "_blank");
-//});
-
-//const arrayX = [];
-//console.log(arrayX);
-
-//buttonX.addEventListener("click", function () {
-//  arrayX.push(1, 2, 3);
-//  console.log(arrayX);
-//});
