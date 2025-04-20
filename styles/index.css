@@ -114,13 +114,17 @@ div.header {
 }
 
 .clickme {
-  background-color: #aa0404;
-  color: rgb(211, 213, 109);
+  background-color: #a884e2;
+  color: #f0f8ff;
+  /* background-color: #aa0404; */
+  /* color: rgb(211, 213, 109); */
 }
 
 .clickme:hover {
-  background-color: #910303;
-  color: rgb(226, 183, 43);
+  background-color: #9777cb;
+  color: #d8dfe6;
+  /* background-color: #910303; */
+  /* color: rgb(226, 183, 43); */
 }
 
 .jp-flag {
