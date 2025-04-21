@@ -11,7 +11,7 @@ a.about {
 
 div.header {
   padding: 25px;
-  background-image: url(https://nexd3v.it/assets/images/nexd3v-full.png);
+  background-image: url(/assets/images/nexd3v-full.png);
   background-position: 0% 45%;
   background-size: cover;
   border-radius: 10px;
@@ -77,7 +77,7 @@ div.header {
 .card1 {
   width: 165px;
   height: 265px;
-  background-image: url(https://nexd3v.it/assets/images/nexd3v.png);
+  background-image: url(/assets/images/nexd3v.png);
   background-position: center;
   background-size: cover;
   z-index: 1;
