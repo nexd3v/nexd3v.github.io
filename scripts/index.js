@@ -1,3 +1,5 @@
+// Coded by nexd3v as a learning project!
+
 // Intro to Website
 let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
