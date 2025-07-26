@@ -1,0 +1,267 @@
+@import "style.css";
+/* Coded by nexd3v as a learning project! */
+
+div.header {
+  padding: 17px;
+  background-image: url(/assets/images/nexd3v-full.png);
+  background-position: 0% 45%;
+  background-size: cover;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+.amtxt {
+  place-self: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 33.3333%;
+  width: 100%;
+}
+
+.devil-frame img {
+  margin: 0;
+  padding-right: 350px;
+  padding-top: 15px;
+  width: 276px;
+  height: 312px;
+  filter: drop-shadow(0px 15px 4px #1e1e1e);
+}
+
+.rotating-3d {
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  min-height: 20vh;
+}
+
+.angel-frame img {
+  margin: 0;
+  padding-left: 350px;
+  padding-top: 20px;
+  width: 276px;
+  height: 312px;
+
+  filter: drop-shadow(0px 15px 4px #1e1e1e);
+}
+
+.divider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.rotating-3d img {
+  width: 141px;
+  height: 250px;
+}
+
+.container {
+  position: relative;
+  width: 141px;
+  height: 250px;
+  transform-style: preserve-3d;
+  animation: animate 45s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(225px);
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+}
+
+.container span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 4px double rgba(168, 132, 226);
+}
+
+/* Popup Gallery */
+
+.container-gallery {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container-gallery h1 {
+  font-size: 40px;
+  font-family: "JBMNerd";
+  font-weight: normal;
+  padding: 15px;
+  color: #750d0d;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gallery {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.image {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(168, 132, 226);
+  border: 7px solid rgba(168, 132, 226);
+  border-radius: 9px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image img {
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 5px solid #fff;
+  border-radius: 5px; */
+  max-width: 90vw;
+  max-height: 80vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.popup-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+/* Buttons */
+
+.popup-image button.prev,
+.popup-image button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 2.5rem;
+  color: #750d0d;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 101; /* Higher than image (default is 'auto') */
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.popup-image button.prev:hover,
+.popup-image button.next:hover {
+  background: #ffe6e6;
+}
+
+.popup-image button.prev {
+  left: 35px; /* Adjust as needed */
+}
+.popup-image button.next {
+  right: 35px; /* Adjust as needed */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-image img {
+    width: 95%;
+  }
+}
