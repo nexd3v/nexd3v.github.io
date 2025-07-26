@@ -35,13 +35,15 @@ main {
 .top-row {
   display: flex;
   justify-content: center;
-  flex: 0 0 33.3333%;
-  width: 100%;
+  flex: 1 1 33.3333%;
+  max-width: 90vw;
+  height: 20vh;
+  padding-bottom: 5vw;
 }
 
 .devil-frame img {
   margin: 0;
-  padding-right: 350px;
+  padding-right: 15vw;
   padding-top: 15px;
   width: 276px;
   height: 312px;
@@ -57,7 +59,7 @@ main {
 
 .angel-frame img {
   margin: 0;
-  padding-left: 350px;
+  padding-left: 15vw;
   padding-top: 20px;
   width: 276px;
   height: 312px;
@@ -111,8 +113,9 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
-  border: 4px double rgba(168, 132, 226);
+  border-radius: 9px;
+  border-image: conic-gradient(#fff 0 0) fill 0 /5px;
+  /* border: 4px double rgba(168, 132, 226); */
 }
 
 /* Popup Gallery */
@@ -120,16 +123,7 @@ main {
 .container-gallery {
   position: relative;
   min-height: 100vh;
-}
-
-.container-gallery h1 {
-  font-size: 40px;
-  font-family: "JBMNerd";
-  font-weight: normal;
-  padding: 15px;
-  color: #750d0d;
-  text-align: center;
-  text-transform: capitalize;
+  max-width: 80.5vw;
 }
 
 .gallery {
@@ -139,15 +133,28 @@ main {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
+  background-color: #272727;
+  border-radius: 9px;
 }
+
+/* .container-gallery h1 {
+  font-size: 40px;
+  font-family: "JBMNerd";
+  font-weight: normal;
+  padding: 15px;
+  color: #750d0d;
+  text-align: center;
+  text-transform: capitalize;
+} */
 
 .image {
   height: 250px;
   width: 350px;
-  background-color: rgba(168, 132, 226);
-  border: 7px solid rgba(168, 132, 226);
+  /* background-color: rgba(168, 132, 226);
+  border: 7px solid rgba(168, 132, 226); */
   border-radius: 9px;
+  border-image: conic-gradient(#fff 0 0) fill 0 /5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
@@ -217,10 +224,10 @@ main {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   border: none;
   font-size: 2.5rem;
-  color: #750d0d;
+  color: #1e1e1e;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -235,7 +242,7 @@ main {
 
 .popup-image button.prev:hover,
 .popup-image button.next:hover {
-  background: #ffe6e6;
+  background: #d8d8d8;
 }
 
 .popup-image button.prev {
