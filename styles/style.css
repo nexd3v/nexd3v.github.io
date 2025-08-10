@@ -82,7 +82,8 @@ footer {
   opacity: 0.75;
 }
 nav a {
-  color: rgba(168, 132, 226);
+  /* color: rgba(168, 132, 226); */
+  color: #a884e2;
 }
 
 .nav {
